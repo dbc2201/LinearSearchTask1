@@ -15,6 +15,12 @@ public class Main {
 
     }
 
+    /**
+     * Finds an integer number in a given integer array.
+     *
+     * @param array  the integer array in which the number is to be searched.
+     * @param number the number to search for.
+     */
     private static int findNumberInIntegerArray(int[] array, int number) {
         int response = -1;
         return response;
