@@ -18,13 +18,15 @@ public class Main {
         System.out.println("How many elements do you want in the array?");
         final Scanner scanner = new Scanner(System.in);
         int numberOfElements = scanner.nextInt();
-        scanner.close();
         int[] numbers = new int[numberOfElements];
         // set random values in the array
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) (Math.random() * 100);
         }
         System.out.println(Arrays.toString(numbers));
+        System.out.println("Enter the number to search for");
+        int numberToSearchFor = scanner.nextInt();
+        scanner.close();
     }
 
     /**
