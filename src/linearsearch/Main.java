@@ -20,8 +20,9 @@ public class Main {
      *
      * @param array  the integer array in which the number is to be searched.
      * @param number the number to search for.
+     * @throws NumberNotFoundInArrayException throws this exception if the number is not present in the array.
      */
-    private static int findNumberInIntegerArray(int[] array, int number) {
+    private static int findNumberInIntegerArray(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
         return response;
     }
