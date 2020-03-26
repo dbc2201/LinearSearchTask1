@@ -26,6 +26,11 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
         System.out.println("Enter the number to search for");
         int numberToSearchFor = scanner.nextInt();
+        try {
+            System.out.println(findNumberInIntegerArray(numbers, numberToSearchFor));
+        } catch (NumberNotFoundInArrayException e) {
+            System.out.println("Number not found in the Array!");
+        }
         scanner.close();
     }
 
