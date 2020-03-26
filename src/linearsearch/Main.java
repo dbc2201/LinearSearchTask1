@@ -7,12 +7,15 @@
 
 package linearsearch;
 
+import java.util.Scanner;
+
 /**
  * This class will be used to demonstrate linear search.
  */
 public class Main {
     public static void main(String[] args) {
-
+        final Scanner scanner = new Scanner(System.in);
+        scanner.close();
     }
 
     /**
