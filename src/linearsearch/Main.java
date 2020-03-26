@@ -26,3 +26,9 @@ public class Main {
         return response;
     }
 }
+
+class NumberNotFoundInArrayException extends Exception {
+    public NumberNotFoundInArrayException(String message) {
+        super(message);
+    }
+}
