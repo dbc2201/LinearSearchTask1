@@ -11,4 +11,9 @@ public class Main {
     public static void main(String[] args) {
 
     }
+
+    private static int binarySearch(int[] array, int number) {
+        int response = -1;
+        return response;
+    }
 }
