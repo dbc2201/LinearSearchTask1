@@ -7,6 +7,8 @@
 
 package binarysearch;
 
+import exceptions.NumberNotFoundInArrayException;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -18,8 +20,9 @@ public class Main {
      * @param array  the array in which we have to search.
      * @param number the number we have to search for.
      * @return the integer index at which the number is present, -1 if not found.
+     * @throws NumberNotFoundInArrayException throws this exception if the number is not present in the array.
      */
-    private static int binarySearch(int[] array, int number) {
+    private static int binarySearch(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
         return response;
     }
