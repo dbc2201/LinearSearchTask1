@@ -17,12 +17,14 @@ public class Main {
         System.out.println("How many elements would you like in the array?: ");
         final Scanner scanner = new Scanner(System.in);
         int numberOfElements = scanner.nextInt();
-        scanner.close();
         int[] randomNumbers = new int[numberOfElements];
         for (int i = 0; i < randomNumbers.length; i++) {
             randomNumbers[i] = (int) (Math.random() * 100);
         }
         System.out.println(Arrays.toString(randomNumbers));
+        System.out.println("Enter the number you want to search in the array: ");
+        int numberToSearch = scanner.nextInt();
+        scanner.close();
     }
 
     /**
