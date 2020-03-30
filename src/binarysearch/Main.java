@@ -42,6 +42,8 @@ public class Main {
      */
     private static int binarySearch(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
+        int startIndex = 0;
+        int endIndex = array.length - 1;
         return response;
     }
 }
