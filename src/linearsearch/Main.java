@@ -7,6 +7,8 @@
 
 package linearsearch;
 
+import exceptions.NumberNotFoundInArrayException;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -44,11 +46,5 @@ public class Main {
     private static int findNumberInIntegerArray(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
         return response;
-    }
-}
-
-class NumberNotFoundInArrayException extends Exception {
-    public NumberNotFoundInArrayException(String message) {
-        super(message);
     }
 }
