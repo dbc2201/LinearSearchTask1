@@ -27,7 +27,7 @@ public class Main {
         try {
             System.out.println(numberToSearch + " found at " + binarySearch(randomNumbers, numberToSearch));
         } catch (NumberNotFoundInArrayException e) {
-            System.out.println("Number not found in the array!");
+            System.out.println(e.getMessage());
         }
         scanner.close();
     }
@@ -44,6 +44,10 @@ public class Main {
         int response = -1;
         int startIndex = 0;
         int endIndex = array.length - 1;
-        return response;
+        if (response == -1) {
+            throw new NumberNotFoundInArrayException("Number not found in the array");
+        } else {
+            return response;
+        }
     }
 }
