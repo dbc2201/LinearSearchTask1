@@ -24,6 +24,11 @@ public class Main {
         System.out.println(Arrays.toString(randomNumbers));
         System.out.println("Enter the number you want to search in the array: ");
         int numberToSearch = scanner.nextInt();
+        try {
+            System.out.println(numberToSearch + " found at " + binarySearch(randomNumbers, numberToSearch));
+        } catch (NumberNotFoundInArrayException e) {
+            System.out.println("Number not found in the array!");
+        }
         scanner.close();
     }
 
