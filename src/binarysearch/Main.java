@@ -9,6 +9,7 @@ package binarysearch;
 
 import exceptions.NumberNotFoundInArrayException;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +22,7 @@ public class Main {
         for (int i = 0; i < randomNumbers.length; i++) {
             randomNumbers[i] = (int) (Math.random() * 100);
         }
+        System.out.println(Arrays.toString(randomNumbers));
     }
 
     /**
