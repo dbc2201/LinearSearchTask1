@@ -17,6 +17,7 @@ public class Main {
         final Scanner scanner = new Scanner(System.in);
         int numberOfElements = scanner.nextInt();
         scanner.close();
+        int[] randomNumbers = new int[numberOfElements];
     }
 
     /**
