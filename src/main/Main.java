@@ -7,6 +7,7 @@
 
 package main;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -19,5 +20,6 @@ public class Main {
         for (int i = 0; i < randomNumbersArray.length; i++) {
             randomNumbersArray[i] = (int) (Math.random() * 100);
         }
+        System.out.println(Arrays.toString(randomNumbersArray));
     }
 }
