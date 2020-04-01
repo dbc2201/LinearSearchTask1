@@ -15,9 +15,9 @@ public class Main {
         final Scanner scanner = new Scanner(System.in);
         int numberOfElements = scanner.nextInt();
         scanner.close();
-        int[] randomNumbers = new int[numberOfElements];
-        for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = (int) (Math.random() * 100);
+        int[] randomNumbersArray = new int[numberOfElements];
+        for (int i = 0; i < randomNumbersArray.length; i++) {
+            randomNumbersArray[i] = (int) (Math.random() * 100);
         }
     }
 }
