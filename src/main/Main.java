@@ -21,5 +21,7 @@ public class Main {
             randomNumbersArray[i] = (int) (Math.random() * 100);
         }
         System.out.println(Arrays.toString(randomNumbersArray));
+        System.out.println("Press 1 to perform linear search.");
+        System.out.println("Press 2 to perform binary search.");
     }
 }
