@@ -7,6 +7,7 @@
 
 package main;
 
+import binarysearch.BinarySearch;
 import exceptions.NumberNotFoundInArrayException;
 import linearsearch.LinearSearch;
 
@@ -38,6 +39,7 @@ public class Main {
                 }
                 break;
             case 2: /*BINARY SEARCH*/
+                BinarySearch binarySearch = new BinarySearch();
                 break;
         }
         scanner.close();

@@ -18,7 +18,7 @@ public class BinarySearch {
      * @return the integer index at which the number is present, -1 if not found.
      * @throws NumberNotFoundInArrayException throws this exception if the number is not present in the array.
      */
-    private static int binarySearch(int[] array, int number) throws NumberNotFoundInArrayException {
+    public int binarySearch(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
         int startIndex = 0;
         int endIndex = array.length - 1;
