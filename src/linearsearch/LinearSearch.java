@@ -12,7 +12,7 @@ import exceptions.NumberNotFoundInArrayException;
 /**
  * This class will be used to demonstrate linear search.
  */
-public class Main {
+public class LinearSearch {
     /**
      * Finds an integer number in a given integer array.
      *
