@@ -20,7 +20,7 @@ public class LinearSearch {
      * @param number the number to search for.
      * @throws NumberNotFoundInArrayException throws this exception if the number is not present in the array.
      */
-    private static int findNumberInIntegerArray(int[] array, int number) throws NumberNotFoundInArrayException {
+    public int findNumberInIntegerArray(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == number) {
