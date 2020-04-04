@@ -7,6 +7,7 @@
 
 package main;
 
+import exceptions.NumberNotFoundInArrayException;
 import linearsearch.LinearSearch;
 
 import java.util.Arrays;
@@ -27,7 +28,14 @@ public class Main {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1: /*LINEAR SEARCH*/
+                System.out.println("What number would you like to find?");
+                int number = scanner.nextInt();
                 LinearSearch linearSearch = new LinearSearch();
+                try {
+                    linearSearch.findNumberInIntegerArray(randomNumbersArray, number);
+                } catch (NumberNotFoundInArrayException e) {
+                    System.out.println(e.getMessage());
+                }
         }
         scanner.close();
     }
