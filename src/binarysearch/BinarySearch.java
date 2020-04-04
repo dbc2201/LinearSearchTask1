@@ -34,7 +34,7 @@ public class BinarySearch {
             }
         }
         if (response == -1) {
-            throw new NumberNotFoundInArrayException("Number not found in the array");
+            throw new NumberNotFoundInArrayException(number + " not found in the array");
         } else {
             return response;
         }
