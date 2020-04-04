@@ -33,7 +33,8 @@ public class Main {
             case 1: /*LINEAR SEARCH*/
                 LinearSearch linearSearch = new LinearSearch();
                 try {
-                    linearSearch.findNumberInIntegerArray(randomNumbersArray, number);
+                    int index = linearSearch.findNumberInIntegerArray(randomNumbersArray, number);
+                    System.out.println(number + " found at index " + index);
                 } catch (NumberNotFoundInArrayException e) {
                     System.out.println(e.getMessage());
                 }
@@ -41,7 +42,8 @@ public class Main {
             case 2: /*BINARY SEARCH*/
                 BinarySearch binarySearch = new BinarySearch();
                 try {
-                    binarySearch.binarySearch(randomNumbersArray, number);
+                    int index = binarySearch.binarySearch(randomNumbersArray, number);
+                    System.out.println(number + " found at index " + index);
                 } catch (NumberNotFoundInArrayException e) {
                     System.out.println(e.getMessage());
                 }
