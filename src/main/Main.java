@@ -43,7 +43,7 @@ public class Main {
                 try {
                     binarySearch.binarySearch(randomNumbersArray, number);
                 } catch (NumberNotFoundInArrayException e) {
-                    e.printStackTrace();
+                    System.out.println(e.getMessage());
                 }
                 break;
         }
