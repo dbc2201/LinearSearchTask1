@@ -22,6 +22,12 @@ public class LinearSearch {
      */
     private static int findNumberInIntegerArray(int[] array, int number) throws NumberNotFoundInArrayException {
         int response = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                response = i;
+                break; // to stop after 1 occurrence, remove for multiple occurrences.
+            }
+        }
         return response;
     }
 }
