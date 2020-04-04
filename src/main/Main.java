@@ -40,6 +40,11 @@ public class Main {
                 break;
             case 2: /*BINARY SEARCH*/
                 BinarySearch binarySearch = new BinarySearch();
+                try {
+                    binarySearch.binarySearch(randomNumbersArray, number);
+                } catch (NumberNotFoundInArrayException e) {
+                    e.printStackTrace();
+                }
                 break;
         }
         scanner.close();
