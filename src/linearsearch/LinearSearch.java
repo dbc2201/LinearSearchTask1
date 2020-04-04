@@ -28,6 +28,10 @@ public class LinearSearch {
                 break; // to stop after 1 occurrence, remove for multiple occurrences.
             }
         }
-        return response;
+        if (response == -1) {
+            throw new NumberNotFoundInArrayException(number + " is not present in the array!");
+        } else {
+            return response;
+        }
     }
 }
