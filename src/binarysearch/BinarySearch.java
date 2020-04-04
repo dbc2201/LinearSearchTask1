@@ -24,6 +24,9 @@ public class BinarySearch {
         int endIndex = array.length - 1;
         while (startIndex <= endIndex) {
             int middleIndex = (startIndex + endIndex) / 2;
+            if (array[middleIndex] == number) {
+                response = middleIndex;
+            }
         }
         if (response == -1) {
             throw new NumberNotFoundInArrayException("Number not found in the array");
