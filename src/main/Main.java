@@ -36,6 +36,7 @@ public class Main {
                 } catch (NumberNotFoundInArrayException e) {
                     System.out.println(e.getMessage());
                 }
+                break;
         }
         scanner.close();
     }
