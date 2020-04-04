@@ -22,6 +22,9 @@ public class BinarySearch {
         int response = -1;
         int startIndex = 0;
         int endIndex = array.length - 1;
+        while (startIndex <= endIndex) {
+
+        }
         if (response == -1) {
             throw new NumberNotFoundInArrayException("Number not found in the array");
         } else {
