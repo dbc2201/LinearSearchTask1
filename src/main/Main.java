@@ -7,6 +7,8 @@
 
 package main;
 
+import linearsearch.LinearSearch;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -23,6 +25,10 @@ public class Main {
         System.out.println("Press 1 to perform linear search.");
         System.out.println("Press 2 to perform binary search.");
         int choice = scanner.nextInt();
+        switch (choice) {
+            case 1: /*LINEAR SEARCH*/
+                LinearSearch linearSearch = new LinearSearch();
+        }
         scanner.close();
     }
 }
