@@ -9,29 +9,7 @@ package binarysearch;
 
 import exceptions.NumberNotFoundInArrayException;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("How many elements would you like in the array?: ");
-        final Scanner scanner = new Scanner(System.in);
-        int numberOfElements = scanner.nextInt();
-        int[] randomNumbers = new int[numberOfElements];
-        for (int i = 0; i < randomNumbers.length; i++) {
-            randomNumbers[i] = (int) (Math.random() * 100);
-        }
-        System.out.println(Arrays.toString(randomNumbers));
-        System.out.println("Enter the number you want to search in the array: ");
-        int numberToSearch = scanner.nextInt();
-        try {
-            System.out.println(numberToSearch + " found at " + binarySearch(randomNumbers, numberToSearch));
-        } catch (NumberNotFoundInArrayException e) {
-            System.out.println(e.getMessage());
-        }
-        scanner.close();
-    }
-
     /**
      * This method will be used to search for a number in the given array.
      *
