@@ -9,7 +9,7 @@ package binarysearch;
 
 import exceptions.NumberNotFoundInArrayException;
 
-public class Main {
+public class BinarySearch {
     /**
      * This method will be used to search for a number in the given array.
      *
