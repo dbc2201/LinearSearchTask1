@@ -27,6 +27,11 @@ public class BinarySearch {
             if (array[middleIndex] == number) {
                 response = middleIndex;
             }
+            if (array[middleIndex] < number) {
+                startIndex = middleIndex + 1;
+            } else {
+                endIndex = middleIndex - 1;
+            }
         }
         if (response == -1) {
             throw new NumberNotFoundInArrayException("Number not found in the array");
