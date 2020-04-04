@@ -15,7 +15,6 @@ public class Main {
         System.out.println("How many elements would you like in the array?: ");
         final Scanner scanner = new Scanner(System.in);
         int numberOfElements = scanner.nextInt();
-        scanner.close();
         int[] randomNumbersArray = new int[numberOfElements];
         for (int i = 0; i < randomNumbersArray.length; i++) {
             randomNumbersArray[i] = (int) (Math.random() * 100);
@@ -23,5 +22,7 @@ public class Main {
         System.out.println(Arrays.toString(randomNumbersArray));
         System.out.println("Press 1 to perform linear search.");
         System.out.println("Press 2 to perform binary search.");
+        int choice = scanner.nextInt();
+        scanner.close();
     }
 }
