@@ -26,16 +26,18 @@ public class Main {
         System.out.println("Press 1 to perform linear search.");
         System.out.println("Press 2 to perform binary search.");
         int choice = scanner.nextInt();
+        System.out.println("What number would you like to find?");
+        int number = scanner.nextInt();
         switch (choice) {
             case 1: /*LINEAR SEARCH*/
-                System.out.println("What number would you like to find?");
-                int number = scanner.nextInt();
                 LinearSearch linearSearch = new LinearSearch();
                 try {
                     linearSearch.findNumberInIntegerArray(randomNumbersArray, number);
                 } catch (NumberNotFoundInArrayException e) {
                     System.out.println(e.getMessage());
                 }
+                break;
+            case 2: /*BINARY SEARCH*/
                 break;
         }
         scanner.close();
