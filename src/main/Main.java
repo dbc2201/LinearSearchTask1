@@ -40,6 +40,7 @@ public class Main {
                 }
                 break;
             case 2: /*BINARY SEARCH*/
+                Arrays.sort(randomNumbersArray);
                 BinarySearch binarySearch = new BinarySearch();
                 try {
                     int index = binarySearch.binarySearch(randomNumbersArray, number);
